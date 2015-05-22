@@ -705,7 +705,7 @@ function Tag(impl, conf, innerHTML) {
 
   if (dom.innerHTML && !/select/.test(tagName) && !/tbody/.test(tagName) && !/tr/.test(tagName))
     // replace all the yield tags with the tag inner html
-    dom.innerHTML = replaceYield(dom.innerHTML, innerHTML)
+    $(dom).html(replaceYield(dom.innerHTML, innerHTML));
 
 
   // options

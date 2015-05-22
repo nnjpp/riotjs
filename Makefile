@@ -67,8 +67,5 @@ watch:
 		node -e $(WATCH) "lib/**/*.js" "make raw" & \
 		export RIOT="../../dist/riot/riot" && node ./lib/server/cli.js --watch test/tag dist/tags.js)
 
-.PHONY: test min
-
-
 # riot maintainer tasks
 -include ../riot-tasks/Makefile
